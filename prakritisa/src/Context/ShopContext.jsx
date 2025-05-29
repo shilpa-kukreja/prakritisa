@@ -170,7 +170,7 @@ const [showWishlist, setShowWishlist] = useState(false);
     const variantKey = selectedVariant?.size || null;
     const image =
       product.thumbImg
-        ? `https://prakritisa.com/uploads/thumbimg/${product.thumbImg}`
+        ? `https://prakritisa.com/uploads/thumbImg/${product.thumbImg}`
         : product.image
           ? `https://prakritisa.com/uploads/${product.image}`
           : "/placeholder.jpg";

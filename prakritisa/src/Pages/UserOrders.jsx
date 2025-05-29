@@ -13,7 +13,7 @@ const UserOrders = () => {
       if (!token) return;
 
       const response = await axios.post(
-        "http://localhost:4000/api/order/userorders",
+        "https://prakritisa.com/api/order/userorders",
         {},
         { headers: { token } }
       );

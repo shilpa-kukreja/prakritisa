@@ -116,7 +116,7 @@ const ProductSlider = ({ category }) => {
                       <img
                         src={
                           product.thumbImg
-                            ? `https://prakritisa.com/uploads/thumbimg/${product.thumbImg}`
+                            ? `https://prakritisa.com/uploads/thumbImg/${product.thumbImg}`
                             : "/placeholder.jpg"
                         }
                         alt={product.name}
@@ -127,9 +127,9 @@ const ProductSlider = ({ category }) => {
                       <img
                         src={
                           product.galleryImg && product.galleryImg.length > 0
-                            ? `https://prakritisa.com/uploads/galleryimg/${product.galleryImg[0]}`
+                            ? `https://prakritisa.com/uploads/galleryImg/${product.galleryImg[0]}`
                             : product.thumbImg
-                              ? `https://prakritisa.com/uploads/thumbimg/${product.thumbImg}`
+                              ? `https://prakritisa.com/uploads/thumbImg/${product.thumbImg}`
                               : "/placeholder.jpg"
                         }
                         alt={product.name}
