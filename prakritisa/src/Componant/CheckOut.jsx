@@ -85,7 +85,7 @@ const CheckOut = () => {
             const totalAmount = cartTotal; // Total before discount
 
             const { data } = await axios.post(
-                "http://localhost:4000/api/coupon/apply",
+                "https://prakritisa.com/api/coupon/apply",
                 { couponCode, totalAmount },
                 { headers: { token } }
 
@@ -121,7 +121,7 @@ const CheckOut = () => {
                 try {
                     setLoading(true);
                     const { data } = await axios.post(
-                        "http://localhost:4000/api/order/verifyRazorpay",
+                        "https://prakritisa.com/api/order/verifyRazorpay",
                         response,
                         { headers: { token } }
                     );
@@ -272,7 +272,7 @@ const CheckOut = () => {
         case "cod": {
             // 1. Place order via your backend
             const response = await axios.post(
-                "http://localhost:4000/api/order/place",
+                "https://prakritisa.com/api/order/place",
                 orderData,
                 { headers: { token } }
             );
@@ -370,7 +370,7 @@ const CheckOut = () => {
 
         case "razorpay": {
             const responseRazorpay = await axios.post(
-                "http://localhost:4000/api/order/razorpay",
+                "https://prakritisa.com/api/order/razorpay",
                 orderData,
                 { headers: { token } }
             );

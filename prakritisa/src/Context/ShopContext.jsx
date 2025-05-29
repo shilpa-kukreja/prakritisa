@@ -20,7 +20,7 @@ const ShopContextProvider = (props) => {
 
   const fetchCategories=async()=>{
     try {
-        const response=await axios.get("http://localhost:4000/api/category/list");
+        const response=await axios.get("https://prakritisa.com/api/category/list");
         if (response.data.success) {
             // console.log(response.data);
              setCategory(response.data.categorys)
@@ -38,7 +38,7 @@ const ShopContextProvider = (props) => {
 
   const fetchSubCategories=async()=>{
           try {
-             const response=await axios.get("http://localhost:4000/api/subcategory/get")
+             const response=await axios.get("https://prakritisa.com/api/subcategory/get")
              if (response.data.success) {
                   // console.log(response.data)
                   setSubcategory(response.data.subcategorys)
@@ -56,7 +56,7 @@ const ShopContextProvider = (props) => {
 
   const fetchConcerns=async()=>{
         try {
-          const response=await axios.get("http://localhost:4000/api/shop/list");
+          const response=await axios.get("https://prakritisa.com/api/shop/list");
              if (response.data.success) {
                 // console.log(response.data);
                 setShopbyconcern(response.data.shops);
@@ -68,7 +68,7 @@ const ShopContextProvider = (props) => {
 
   const fetchProducts=async()=>{
     try {
-       const response=await axios.get("http://localhost:4000/api/product/list");
+       const response=await axios.get("https://prakritisa.com/api/product/list");
        if (response.data.success) {
         // console.log(response.data)
         setProducts(response.data.products)
@@ -89,7 +89,7 @@ const ShopContextProvider = (props) => {
 
   const fetchblogs=async()=>{
      try {
-      const response=await axios.get("http://localhost:4000/api/blog/bloglist")
+      const response=await axios.get("https://prakritisa.com/api/blog/bloglist")
        if (response.data.success) {
           // console.log(response.data);
           setBlog(response.data.blogs)
@@ -170,9 +170,9 @@ const [showWishlist, setShowWishlist] = useState(false);
     const variantKey = selectedVariant?.size || null;
     const image =
       product.thumbImg
-        ? `http://localhost:4000/uploads/thumbimg/${product.thumbImg}`
+        ? `https://prakritisa.com/uploads/thumbimg/${product.thumbImg}`
         : product.image
-          ? `http://localhost:4000/uploads/${product.image}`
+          ? `https://prakritisa.com/uploads/${product.image}`
           : "/placeholder.jpg";
 
 
