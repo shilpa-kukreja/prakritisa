@@ -13,7 +13,7 @@ import { MdEmail } from "react-icons/md";
 
 import React, { useContext, useEffect } from 'react'
 
-import { ShopContext } from '../context/ShopContext';
+import { ShopContext } from '../Context/ShopContext';
 
 const Footer = () => {
 
