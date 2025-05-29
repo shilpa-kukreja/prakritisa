@@ -98,14 +98,14 @@ const ProductDetail = () => {
 
                <SwiperSlide key={id}>
                   <div className="zoom-wrapper">
-                    <img src={`http://localhost:4000/uploads/thumbimg/${product.thumbImg}`} alt={`product-${id}`} width="100%" className="main-img" />
+                    <img src={`https://prakritisa.com/uploads/thumbImg/${product.thumbImg}`} alt={`product-${id}`} width="100%" className="main-img" />
                   </div>
                 </SwiperSlide>
                {
                 product.galleryImg.map((img, id) => (
                 <SwiperSlide key={id}>
                   <div className="zoom-wrapper">
-                    <img src={`http://localhost:4000/uploads/galleryimg/${img}`} alt={`product-${id}`} width="100%" className="main-img" />
+                    <img src={`https://prakritisa.com/uploads/galleryImg/${img}`} alt={`product-${id}`} width="100%" className="main-img" />
                   </div>
                 </SwiperSlide>
               ))}
@@ -120,12 +120,12 @@ const ProductDetail = () => {
               modules={[Thumbs]}
             >
                <SwiperSlide key={id}>
-                  <img src={`http://localhost:4000/uploads/thumbimg/${product.thumbImg}`} alt={`thumb-${id}`} width="100%" className="thumb-img" />
+                  <img src={`https://prakritisa.com/uploads/thumbImg/${product.thumbImg}`} alt={`thumb-${id}`} width="100%" className="thumb-img" />
                 </SwiperSlide>
              {
                product.galleryImg.map((img, id) => (
                 <SwiperSlide key={id}>
-                  <img src={`http://localhost:4000/uploads/galleryimg/${img}`} alt={`thumb-${id}`} width="100%" className="thumb-img" />
+                  <img src={`https://prakritisa.com/uploads/galleryImg/${img}`} alt={`thumb-${id}`} width="100%" className="thumb-img" />
                 </SwiperSlide>
               ))}
             </Swiper>

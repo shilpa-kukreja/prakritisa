@@ -209,12 +209,12 @@ console.log('ok', products);
                         <Link to={`/product-details/${product._id}`}>
                           <img src={
                             product.thumbImg
-                              ? `http://localhost:4000/uploads/thumbimg/${product.thumbImg}`
+                              ? `https://prakritisa.com/uploads/thumbImg/${product.thumbImg}`
                               : "/placeholder.jpg"
                           } alt={product.name} className="img-main" />
                           <img src={
                             product.galleryImg
-                              ? `http://localhost:4000/uploads/galleryimg/${product.galleryImg[0]}`
+                              ? `https://prakritisa.com/uploads/galleryImg/${product.galleryImg[0]}`
                               : "/placeholder.jpg"
                           } alt={product.name} className="img-hover" />
                         </Link>
