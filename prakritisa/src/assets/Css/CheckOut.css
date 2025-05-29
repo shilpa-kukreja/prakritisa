@@ -1,0 +1,150 @@
+
+
+.checkout_container{ padding: 80px 0; }
+/* background-color: #f5efe6; */
+ .billing_details{ display: flex; justify-content: space-between; flex-wrap: wrap;}
+
+  .billing_details .checkout_form{ flex: 0 0 58%; width: 58%;  }
+  .billing_details .checkout_form h2{ margin-bottom: 30px ;}
+ .order_information { flex: 0 00 38%; width: 38%;}
+
+
+
+
+
+
+
+
+
+ .form_row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+
+  }
+  .form_row .form_group {
+    flex: 1;
+    min-width: calc(50% - 10px); 
+    display: flex;
+    flex-direction: column;
+  }
+  .form_row .form_group label{ margin-bottom: 10px; font-size: 18px;}
+  .form_row .form_group input{  font-family: 'hello-branch', sans-serif; font-size: 20px; letter-spacing: 2px;}
+  
+  .form_control {
+    font-size: 20px;
+    padding: 12px 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    font-family: 'hello-branch', sans-serif;
+  }
+  .order_information{ border: 2px solid #00000038; padding: 20px ;}
+  .order_information  h2{ margin-bottom: 30px ; padding-bottom: 10px; border-bottom: 1px solid #ddd;  }
+
+   .order_information .order_details ul{ display: flex; justify-content: space-between;}
+   .order_information .order_details ul:first-child{ font-weight: 800}
+   .order_information .order_details { margin-bottom: 15px ; font-size: 18px;}
+
+   .order_information .calculate_price{ border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; padding: 15px 0 ;}
+
+
+
+
+
+
+   .order_information .radio-button {
+    display: flex
+;  font-size: 18px;
+    gap: 10px;
+    margin: 10px;
+    position: relative;
+    align-items: center;
+    color: #000;
+    cursor: pointer; }
+
+    .radio-button input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+    }
+    .radio-button input[type="radio"]:checked + .radio {
+        border-color: #643A1D;
+        transform: translateZ(0px);
+        background-color: #FAF0E6;
+    }
+
+    .radio-button input[type="radio"]:checked + .radio::before {
+        opacity: 1;
+    }
+    .radio {
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 2px solid #643A1D;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        transform: translateZ(-25px);
+        transition: all 0.3s ease-in-out;
+    }
+    .radio::before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        top: 5px;
+        left: 5px;
+        border-radius: 50%;
+        background-color: #643A1D;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .place_order_btn button {    background-color: #8ca88a; font-family: 'hello-branch', sans-serif; border: none; color: #fff; font-size: 20px; cursor: pointer; padding: 10px 16px;}
+
+    .place_order_btn button:hover{background-color: #8aa089; }
+    .product_details .cart_item {  margin: 10px 0 ;}
+    .product_details .order_details .product_name{  font-size: 18px;  }
+    .product_details .order_details .product_price{ font-size: 18px;     flex: 0 0 100px;
+        /* float: right; */
+        text-align: end;}
+
+
+
+
+.loader-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+          }
+          
+.spinner {
+            border: 6px solid #eee;
+            border-top: 6px solid #4CAF50;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1rem;
+          }
+          
+          @keyframes spin {
+            to {
+              transform: rotate(360deg);
+            }
+          }
+          
+      @media (max-width: 992px) {
+             .billing_details .checkout_form{ flex: 0 0 100%!important; width: 100%;  }
+
+                 .order_information { flex: 0 00 100%; width: 100%; margin-top: 20px;}
+          }

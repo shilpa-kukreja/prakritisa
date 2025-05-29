@@ -1,0 +1,205 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap'); */
+
+ @font-face {
+    font-family: 'hello-branch';
+    src: url('./assets/font/hello-branch/hello-branch-regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+   body {
+    font-family: 'hello-branch', sans-serif;
+  }  
+
+
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --clor-red: red;
+    
+    --bg-color:#4f3d32;
+    --product-color:#f5efe6;
+  
+
+}
+/* .marcellus-regular {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
+
+.white-color {
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    letter-spacing: 1.5px ;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+    /* overflow-clip-margin:unset; */
+    
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.4;
+   
+
+}
+
+html,
+body {
+    font-family: 'hello-branch',serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style: none;
+}
+div p a{
+    color: #33b6bb;
+}
+p a{
+    color: #33b6bb;
+}
+.cursor-pointor{ cursor: pointer;}
+
+ul,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.container-sm {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-full {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+
+.relative {
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-half {
+    width: 48%;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-3 {
+    width: 32%;
+}
+
+.col-4 {
+    width: 24%;
+}
+
+.col-5 {
+    width: 30%;
+}
+
+.col-6 {
+    width: 60%;
+}
+
+.col-7 {
+    width: 68%;
+}
+
+.w-50 {
+    width: 48%;
+}
+
+.w-100{ width: 100%;}
+
+.common_btn a { display: inline-block; padding: 10px 18px ; font-size: 20px; background-color:#8ca88a
+     ; color: var(--color-white); margin: 20px 0; letter-spacing: 1px;   }
+     .common_btn a:hover{ background-color:#9ac097}
+
+
+.common_btn button{ display: inline-block; padding: 10px 18px ; font-size: 20px; background-color:#8ca88a
+     ; color: var(--color-white); margin: 20px 0; letter-spacing: 1px; border: none;  outline: none;}
+     .common_btn a:hover{ background-color:#9ac097 }
+
+
+.password-group {
+        position: relative;
+      }
+      
+.password-toggle {
+        position: absolute;
+        top: 60%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #555;
+      }
+
+
+
+.flex-forgot{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.text-login{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+  .margin-60{ margin: 60px 0;}
+  .padding-60{ padding: 60px 0;}
+
+@media (max-width: 768px) {
+
+    .margin-60{ margin: 40px 0 !important;}
+    .padding-60{ padding: 40px 0 !important;}
+    
+}
